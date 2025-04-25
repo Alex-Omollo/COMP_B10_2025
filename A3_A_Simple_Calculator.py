@@ -14,5 +14,5 @@ flCompound = float(input("How many times is it compounded: "))
 flAmount = flPrinciple * (1 + (flRate / 100) / flCompound) ** (flCompound * flTime)
 
 # Final answer
-print(f"The intrest rate for a principal of {flPrinciple} and a time of {flTime} with an intrest rate of {flRate} "
-      f"compunded at {flCompound} gives a total amount of {flAmount}")
+print(f"The compounded intrest rate for a principal of {flPrinciple} and a time of {flTime} with an intrest rate of {flRate} "
+      f"compounded at {flCompound} gives a total amount of {flAmount}")
