@@ -3,7 +3,7 @@ import random
 # Create a function that receives the user input
 def strUser():
     while True:
-        strUser = input("Choose between (r)ock, (p)aper, (s)cissors: ").strip().lower()
+        strUser = input("Choose between (r)ock, (p)aper or (s)cissors: ").strip().lower()
         if strUser == "r":
             strReturn =  "r"
             print("You chose rock.")
@@ -61,6 +61,10 @@ def judge(strU, strC):
                 print("You win.\n")
                 return "u"
 
+print("#" * 90)
+print("Welcome to my game!".center(90))
+print("#" * 90)
+
 # Game Logic
 while True:
 
@@ -75,16 +79,15 @@ while True:
             intU += 1
         elif result == "c":
             intC += 1
-        else:
-            print("Tie")
+        print(f"Your score is {intU} points\nComputer score is {intC} points")
 
         if intU == 2:
             print("You win.\n")
-        else:
+        elif intC == 2:
             print("Computer wins.\n")
 
-    strPlay = input("Would you like to play again?(y/n) ").strip().lower()
-    if strPlay != "y":
+    strPlay = input("Would you like to play again(y/n)? ").strip().lower()
+    if strPlay == "n":
         break
 
 print("Thank you for playing")
