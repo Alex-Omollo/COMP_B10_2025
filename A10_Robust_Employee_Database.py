@@ -52,7 +52,7 @@ def removeEmployee(dData):
 
 def listEmployees(dData):
     for key in dData:
-        print(f"ID: {key}".ljust(10) + f"{dData[key]['Name']}")
+        print(f"ID: {key}".ljust(10, ".") + f"{dData[key]['Name']}")
 
 while True:
     print("Welcome to the Employees Database")
