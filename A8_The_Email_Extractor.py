@@ -53,6 +53,7 @@ def returnEmails(strText):
 
         # combine both parts together
         NewUser = user[::-1]
+        print(type(NewUser))
         NewDomain = domain[::-1]
         cleanMail = NewUser + "@" + NewDomain
         liNewMail.append(cleanMail)
